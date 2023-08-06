@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+body {
+    font-family: Inter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.keyboard {
+    background: #F7F7F7;
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.row {
+    max-width: 1200px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.key {
+    min-width: 65px;
+    height: 65px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #60C1B6;
+    border: none;
+    outline: none;
+    padding: 18px 20px;
+    text-transform: uppercase;
+}
+
+.utility {
+    flex: auto;
+    color: #868888;
+}
+
+.jiggle{
+    animation: jiggle 1s;
+    animation-iteration-count: infinite;
+    background-color: #60C1B6;
+    color: white;
+    
+}
+
+@keyframes jiggle{
+    0%{transform: translate(1px,1px) rotate(0deg);}
+    10%{transform: translate(-1px,-2px) rotate(-1deg);}
+    20%{transform: translate(-3px,0px) rotate(1deg);}
+    30%{transform: translate(3px,2px) rotate(0deg);}
+    40%{transform: translate(1px,-1px) rotate(1deg);}
+    50%{transform: translate(-1px,2px) rotate(-1deg);}
+    60%{transform: translate(-3px,1px) rotate(0deg);}
+    70%{transform: translate(3px,1px) rotate(-1deg);}
+    80%{transform: translate(-1px,-1px) rotate(1deg);}
+    90%{transform: translate(1px,2px) rotate(0deg);}
+    100%{transform: translate(1px,-2px) rotate(-1deg);}
+}
